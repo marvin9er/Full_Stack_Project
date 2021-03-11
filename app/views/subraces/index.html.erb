@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Subraces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Race</th>
+      <th>Desc</th>
+      <th>Ability bonuses</th>
+      <th>Starting proficiencies</th>
+      <th>Languages</th>
+      <th>Traits</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subraces.each do |subrace| %>
+      <tr>
+        <td><%= subrace.index %></td>
+        <td><%= subrace.name %></td>
+        <td><%= subrace.race %></td>
+        <td><%= subrace.desc %></td>
+        <td><%= subrace.ability_bonuses %></td>
+        <td><%= subrace.starting_proficiencies %></td>
+        <td><%= subrace.languages %></td>
+        <td><%= subrace.traits %></td>
+        <td><%= subrace.url %></td>
+        <td><%= link_to 'Show', subrace %></td>
+        <td><%= link_to 'Edit', edit_subrace_path(subrace) %></td>
+        <td><%= link_to 'Destroy', subrace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subrace', new_subrace_path %>

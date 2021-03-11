@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  index: MyString
+  name: MyString
+  race: 
+  desc: MyString
+  ability_bonuses: 
+  starting_proficiencies: 
+  languages: 
+  traits: 
+  url: MyString
+
+two:
+  index: MyString
+  name: MyString
+  race: 
+  desc: MyString
+  ability_bonuses: 
+  starting_proficiencies: 
+  languages: 
+  traits: 
+  url: MyString

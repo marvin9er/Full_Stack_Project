@@ -1,0 +1,62 @@
+<%= form_with(model: subrace) do |form| %>
+  <% if subrace.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(subrace.errors.count, "error") %> prohibited this subrace from being saved:</h2>
+
+      <ul>
+        <% subrace.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :index %>
+    <%= form.text_field :index %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race %>
+    <%= form.text_field :race %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc %>
+    <%= form.text_field :desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ability_bonuses %>
+    <%= form.text_field :ability_bonuses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :starting_proficiencies %>
+    <%= form.text_field :starting_proficiencies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :languages %>
+    <%= form.text_field :languages %>
+  </div>
+
+  <div class="field">
+    <%= form.label :traits %>
+    <%= form.text_field :traits %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

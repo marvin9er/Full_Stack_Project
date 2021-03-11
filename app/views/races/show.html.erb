@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @race.name %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @race.speed %>
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  <%= @race.alignment %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @race.age %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @race.size %>
+</p>
+
+<p>
+  <strong>Size desc:</strong>
+  <%= @race.size_desc %>
+</p>
+
+<p>
+  <strong>Language desc:</strong>
+  <%= @race.language_desc %>
+</p>
+
+<p>
+  <strong>Subraces:</strong>
+  <%= @race.subraces %>
+</p>
+
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'Back', races_path %>

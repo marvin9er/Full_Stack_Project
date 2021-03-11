@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @subrace.index %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @subrace.name %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @subrace.race %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @subrace.desc %>
+</p>
+
+<p>
+  <strong>Ability bonuses:</strong>
+  <%= @subrace.ability_bonuses %>
+</p>
+
+<p>
+  <strong>Starting proficiencies:</strong>
+  <%= @subrace.starting_proficiencies %>
+</p>
+
+<p>
+  <strong>Languages:</strong>
+  <%= @subrace.languages %>
+</p>
+
+<p>
+  <strong>Traits:</strong>
+  <%= @subrace.traits %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @subrace.url %>
+</p>
+
+<%= link_to 'Edit', edit_subrace_path(@subrace) %> |
+<%= link_to 'Back', subraces_path %>

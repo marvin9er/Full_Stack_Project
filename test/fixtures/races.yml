@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  index: MyString
+  name: MyString
+  speed: 1
+  alignment: MyString
+  age: MyString
+  size: MyString
+  size_desc: MyString
+  languages: 
+  language_desc: MyString
+  traits: 
+  subraces: 
+  url: MyString
+
+two:
+  index: MyString
+  name: MyString
+  speed: 1
+  alignment: MyString
+  age: MyString
+  size: MyString
+  size_desc: MyString
+  languages: 
+  language_desc: MyString
+  traits: 
+  subraces: 
+  url: MyString
