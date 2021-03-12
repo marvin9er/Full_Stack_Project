@@ -14,10 +14,6 @@
       <th>Name</th>
       <th>Race</th>
       <th>Desc</th>
-      <th>Ability bonuses</th>
-      <th>Starting proficiencies</th>
-      <th>Languages</th>
-      <th>Traits</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,10 +24,6 @@
         <td><%= subrace.name %></td>
         <td><%= subrace.race %></td>
         <td><%= subrace.desc %></td>
-        <td><%= subrace.ability_bonuses %></td>
-        <td><%= subrace.starting_proficiencies %></td>
-        <td><%= subrace.languages %></td>
-        <td><%= subrace.traits %></td>
         <td><%= link_to 'Show', subrace %></td>
         <td><%= link_to 'Destroy', subrace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
