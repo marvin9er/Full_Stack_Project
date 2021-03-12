@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= link_to 'Home', root_path %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @language.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @language.type %>
+</p>
+
+<p>
+  <strong>Typical speakers:</strong>
+  <%= @language.typical_speakers %>
+</p>
+
+<p>
+  <strong>Script:</strong>
+  <%= @language.script %>
+</p>
+
+<%= link_to 'Back', languages_path %>

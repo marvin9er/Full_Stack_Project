@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= link_to 'Home', root_path %></p>
+
+<h1>Languages</h1>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Typical speakers</th>
+      <th>Script</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @languages.each do |language| %>
+      <tr>
+        <td><%= language.name %></td>
+        <td><%= language.type %></td>
+        <td><%= language.typical_speakers %></td>
+        <td><%= language.script %></td>
+        <td><%= link_to 'Show', language %></td>
+        <td><%= link_to 'Destroy', language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Language', new_language_path %>

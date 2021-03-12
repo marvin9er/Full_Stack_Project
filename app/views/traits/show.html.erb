@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= link_to 'Home', root_path %></p>
+
+<p>
+  <strong>Races:</strong>
+  <%= @trait.races %>
+</p>
+
+<p>
+  <strong>Subraces:</strong>
+  <%= @trait.subraces %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trait.name %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @trait.desc %>
+</p>
+
+<%= link_to 'Back', traits_path %>

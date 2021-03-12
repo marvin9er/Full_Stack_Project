@@ -1,9 +1,6 @@
-<p id="notice"><%= notice %></p>
+<p><%= link_to 'Home', root_path %></p>
 
-<p>
-  <strong>Index:</strong>
-  <%= @subrace.index %>
-</p>
+<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -40,10 +37,4 @@
   <%= @subrace.traits %>
 </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @subrace.url %>
-</p>
-
-<%= link_to 'Edit', edit_subrace_path(@subrace) %> |
 <%= link_to 'Back', subraces_path %>
