@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_12_054144) do
+ActiveRecord::Schema.define(version: 2021_03_12_192503) do
 
   create_table "languages", force: :cascade do |t|
     t.string "index"
     t.string "name"
-    t.string "type"
+    t.string "lang_type"
     t.string "typical_speakers"
     t.string "script"
     t.string "url"
