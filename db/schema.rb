@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_12_192503) do
+ActiveRecord::Schema.define(version: 2021_03_15_155950) do
 
   create_table "languages", force: :cascade do |t|
     t.string "index"
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2021_03_12_192503) do
     t.string "size"
     t.string "size_desc"
     t.string "language_desc"
-    t.string "subraces"
     t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -46,12 +45,11 @@ ActiveRecord::Schema.define(version: 2021_03_12_192503) do
     t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "race_id"
   end
 
   create_table "traits", force: :cascade do |t|
     t.string "index"
-    t.string "races"
-    t.string "subraces"
     t.string "name"
     t.string "desc"
     t.string "url"
